@@ -86,13 +86,13 @@ var borslunch = {
                         self.available.push(video);
                         resolve({ 'ok': true, 'resp': resp });
                     } else {
-                        console.log("Something went wrong: " + resp.statusCode); // + ': '+ resp.Message);
+                        console.log("borslunch Something went wrong: " + resp.statusCode); // + ': '+ resp.Message);
                         //self.sendSocketNotification('SERVICE_FAILURE', resp); 
                         resolve({ 'ok': false, 'resp': "Something went wrong: " + resp.statusCode });
                     }
                 })
                 .catch(function (err) {
-                    if (err.statusCode != 404) console.log('Problems: ' + err);
+                    if (err.statusCode != 404) console.log('borslunch Problems: ' + err);
                     else console.log(err.options.uri + ' not found');
                     //self.sendSocketNotification('SERVICE_FAILURE', {resp: {StatusCode: 600, Message: err}}); 
                     resolve({ 'ok': false, 'resp': "Not found: " + err.statusCode });

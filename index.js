@@ -1,6 +1,6 @@
 var borslunch = require('./borslunch');
 
-borslunch.init({proxy: 'http://gia.sebank.se:8080'});
+borslunch.init(/*{proxy: 'http://gia.sebank.se:8080'}*/{});
 
 borslunch.findVideos(showAvailable);
 

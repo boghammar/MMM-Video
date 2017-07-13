@@ -11,7 +11,7 @@ module.exports = NodeHelper.create({
 
     getFeed: function() {
         var self = this;
-        borslunch.init({proxy: 'http://gia.sebank.se:8080'});
+        borslunch.init(/*{proxy: 'http://gia.sebank.se:8080'}*/ {});
 
         borslunch.findVideos(function() {
             console.log("Got "+borslunch.available.length+" videos");
