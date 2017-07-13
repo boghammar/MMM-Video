@@ -2,7 +2,7 @@
   "name": "mmm-video",
   "version": "1.0.0",
   "description": "Show video in MM",
-  "main": "borslunch.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,6 +13,8 @@
     "moment": "^2.18.1",
     "moment-business": "^3.0.1",
     "request": "^2.81.0",
-    "request-promise": "^4.2.1"
+    "request-promise": "^4.2.1",
+    "https-proxy-agent": "^2.0.0",
+    "url": "^0.11.0"
   }
 }
